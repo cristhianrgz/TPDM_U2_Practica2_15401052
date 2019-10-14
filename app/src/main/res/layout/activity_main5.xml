@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".MainActivity">
-
+    tools:context=".Main5Activity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Clientes"
+        android:text="Detalle de compras"
         android:textSize="25dp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -32,24 +31,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:hint="Escriba el nombre"
-        android:id="@+id/editNombreCl"
+        android:hint="Escriba el id del almacen"
+        android:id="@+id/editIDALMACEN"
+        android:inputType="number"
         />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:hint="Escriba el domicilio"
-        android:id="@+id/editDomicilioCl"
+        android:hint="Escriba la cantidad"
+        android:id="@+id/editCantidadDet"
+        android:inputType="number"
         />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:hint="Escriba el telefono"
-        android:id="@+id/editTelefonoCl"
+        android:hint="Escriba el precio"
+        android:id="@+id/editPrecioDet"
+        android:inputType="number"
         />
 
     <LinearLayout
@@ -58,7 +60,7 @@
         android:layout_marginTop="20dp">
 
         <Button
-            android:id="@+id/btnInsertarCl"
+            android:id="@+id/btnInsertarDet"
             android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:background="#95D8F5"
@@ -66,7 +68,7 @@
             android:textSize="20dp" />
 
         <Button
-            android:id="@+id/btnBuscarCl"
+            android:id="@+id/btnBuscarDet"
             android:layout_width="123dp"
             android:layout_height="wrap_content"
             android:background="#95D8F5"
@@ -76,7 +78,7 @@
             />
 
         <Button
-            android:id="@+id/btnEliminarCl"
+            android:id="@+id/btnEliminarDet"
             android:layout_width="113dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -86,7 +88,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnActualizarCl"
+        android:id="@+id/btnActualizarDet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#F5C271"
@@ -98,17 +100,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mostrar clientes registrados"
-        android:textSize="25dp"
-        android:textStyle="bold"
         android:layout_marginTop="25dp"
-        />
+        android:text="Mostrar todos los Det compra"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/clientesRegistrados"
-
+        android:id="@+id/detComprasRegistradas"
         />
 
 </LinearLayout>

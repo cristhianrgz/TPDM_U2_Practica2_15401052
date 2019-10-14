@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".MainActivity">
-
+    tools:context=".Main2Activity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Clientes"
+        android:text="Compras"
         android:textSize="25dp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -32,24 +31,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:hint="Escriba el nombre"
-        android:id="@+id/editNombreCl"
+        android:hint="Escriba la fecha"
+        android:id="@+id/editFechaCom"
+        android:inputType="date"
         />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:hint="Escriba el domicilio"
-        android:id="@+id/editDomicilioCl"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:hint="Escriba el telefono"
-        android:id="@+id/editTelefonoCl"
+        android:hint="Escriba el total de compra"
+        android:id="@+id/editTotalCom"
+        android:inputType="number"
         />
 
     <LinearLayout
@@ -58,7 +51,7 @@
         android:layout_marginTop="20dp">
 
         <Button
-            android:id="@+id/btnInsertarCl"
+            android:id="@+id/btnInsertarCom"
             android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:background="#95D8F5"
@@ -66,7 +59,7 @@
             android:textSize="20dp" />
 
         <Button
-            android:id="@+id/btnBuscarCl"
+            android:id="@+id/btnBuscarCom"
             android:layout_width="123dp"
             android:layout_height="wrap_content"
             android:background="#95D8F5"
@@ -76,7 +69,7 @@
             />
 
         <Button
-            android:id="@+id/btnEliminarCl"
+            android:id="@+id/btnEliminarCom"
             android:layout_width="113dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -86,7 +79,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnActualizarCl"
+        android:id="@+id/btnActualizarCom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#F5C271"
@@ -98,16 +91,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mostrar clientes registrados"
-        android:textSize="25dp"
-        android:textStyle="bold"
         android:layout_marginTop="25dp"
-        />
+        android:text="Mostrar compras registradas"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/clientesRegistrados"
+        android:id="@+id/comprasRegistrados"
 
         />
 
